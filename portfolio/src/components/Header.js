@@ -2,10 +2,10 @@ import React from 'react';
 
 const Header = () => {
     return ( 
-        <section>
+        <section id="header">
             <header>
-                <h1>Daniel Weinman</h1>
-                <p>Full Stack Web Developer</p>
+                <h1>DANIEL WEINMAN</h1>
+                <p>FULL STACK WEB DEVELOPER</p>
             </header>
         </section>
      );

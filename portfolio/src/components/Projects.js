@@ -3,7 +3,7 @@ import React from 'react';
 const Bio = () => {
     return ( 
         <>
-            <section>
+            <section id="projects">
                 <div className="container">
                     <div className="content">
                         <header className="major">
@@ -12,15 +12,15 @@ const Bio = () => {
                         <p>Past projects built using a combination of HTML/CSS for basic design, React/Redux to create interactive UI's, and Node.js/Express for the backend.</p>
                         <ul className="icons-grid">
                             <li>
-                                <span className="icon major fa-calculator"></span>
+                                <span className="icon major fas fa-calculator"></span>
                                 <a href="https://dan-calculator.netlify.com/" target='_blank' rel="noopener noreferrer"><h3>React Calculator</h3></a>
                             </li>
                             <li>
-                                <span className="icon major fa-instagram"></span>
+                                <span className="icon major fab fa-instagram"></span>
                                 <a href="https://dan-instagram.netlify.com/" target="_blank" rel="noopener noreferrer"><h3>React IG Clone</h3></a>
                             </li>
                             <li>
-                                <span className="icon major fa-plane"></span>
+                                <span className="icon major fas fa-plane"></span>
                                 <a href="https://guidr-react-dan.netlify.com/login" target="_blank" rel="noopener noreferrer"><h3>Redux Guidr App</h3></a>
                             </li>
                             <li>
