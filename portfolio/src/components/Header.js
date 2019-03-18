@@ -5,6 +5,7 @@ const Header = () => {
         <section id="header">
             <header>
                 <h1>DANIEL WEINMAN</h1>
+                <div className="header-hr"><hr></hr></div>
                 <p>FULL STACK WEB DEVELOPER</p>
             </header>
         </section>

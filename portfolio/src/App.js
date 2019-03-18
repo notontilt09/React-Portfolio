@@ -10,9 +10,11 @@ class App extends Component {
     return (
       <div className="App">
         <Header />
-        <Bio />
-        <Projects />
-        <Contact />
+        <div className="center-scroll">
+          <Bio />
+          <Projects />
+          <Contact />
+        </div>
       </div>
     );
   }
