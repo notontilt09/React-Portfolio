@@ -3,7 +3,8 @@
 }
 
 html {
-  background-image: url('./images/coding.jpg')
+  /* background-image: url('./images/coding.jpg'); */
+  background: #333
 }
 
 #header {
@@ -14,7 +15,31 @@ html {
 #header h1 {
   font-size: 5rem;
   font-weight: bold;
-  -webkit-text-stroke: 0.25px black;
+}
+
+/* DEMO-SPECIFIC STYLES */
+.typewriter h1 {
+  width: 60%;
+  color: #fff;
+  overflow: hidden; /* Ensures the content is not revealed until the animation */
+  border-right: .3rem solid orange; /* The typwriter cursor */
+  white-space: nowrap; /* Keeps the content on a single line */
+  margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+  animation: 
+    typing 3s steps(30),
+    blink-caret 0.5s infinite;
+}
+
+/* The typing effect */
+@keyframes typing {
+  from { width: 0 }
+  to { width: 60% }
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+  from, to { border-color: orange }
+  50% { border-color: transparent }
 }
 
 
