@@ -15,38 +15,27 @@ html {
 #header h1 {
   font-size: 5rem;
   font-weight: bold;
+  text-transform: uppercase;
 }
 
-/* DEMO-SPECIFIC STYLES */
-.typewriter h1 {
-  width: 60%;
-  color: #fff;
-  overflow: hidden; /* Ensures the content is not revealed until the animation */
-  border-right: .3rem solid orange; /* The typwriter cursor */
-  white-space: nowrap; /* Keeps the content on a single line */
-  margin: 0 auto; /* Gives that scrolling effect as the typing happens */
-  animation: 
-    typing 3s steps(30),
-    blink-caret 0.5s infinite;
+#header p {
+  font-size: 2rem;
+  font-weight: bold;
+  text-transform: uppercase;
 }
 
-/* The typing effect */
-@keyframes typing {
-  from { width: 0 }
-  to { width: 60% }
+.header-hr {
+  width: 25%;
+  margin: 20px auto;
 }
-
-/* The typewriter cursor effect */
-@keyframes blink-caret {
-  from, to { border-color: orange }
-  50% { border-color: transparent }
-}
-
-
 
 .center-scroll {
   background: white;
   width: 50%;
   margin: 0 auto;
 }
+
+
+
+
 
