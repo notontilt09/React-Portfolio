@@ -3,13 +3,12 @@
 }
 
 html {
-  /* background-image: url('./images/coding.jpg'); */
-  background: #333
+  background: rgb(30, 30, 30);
 }
 
 #header {
-  color: white;
-  margin-top: 100px;
+  color: rgb(192, 193, 154);
+  margin: 50px;
 }
 
 #header h1 {
@@ -19,14 +18,25 @@ html {
 }
 
 #header p {
-  font-size: 2rem;
-  font-weight: bold;
+  font-size: 2.5rem;
+  font-weight: bolder;
+  font-style: italic;
   text-transform: uppercase;
+  color: rgb(87, 153, 206);
 }
 
-.header-hr {
+.header-hr hr {
   width: 25%;
   margin: 20px auto;
+  border-color: gray;
+}
+
+.main-pic {
+  width: 200px;
+  height: 200px;
+  border-radius: 100px;
+  margin-top: 30px;
+  margin-bottom: 30px;
 }
 
 .center-scroll {

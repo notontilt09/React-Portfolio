@@ -1,11 +1,13 @@
 import React from 'react';
 import Typed from 'typed.js';
+import logo from '../images/profile_pic.jpeg'
+import { TweenMax } from 'gsap';
 
 class Header extends React.Component {
     componentDidMount() {
         const strings = [
             'Daneil',
-            'Daniel Weinman'
+            'Daniel ^500 Weinman'
         ];
 
         const strings2 = [
@@ -21,7 +23,7 @@ class Header extends React.Component {
             backSpeed: 100,
             onComplete: () => {
                 const cursor1 = document.querySelector('.typed-cursor');
-                setTimeout(() => cursor1.remove(), 2000)
+                setTimeout(() => cursor1.remove(), 1000)
             }
         };
         
@@ -37,6 +39,7 @@ class Header extends React.Component {
 
         this.typed = new Typed(this.el, options)
         this.typed.start();
+        TweenMax.fromTo(this.hr, 3, {width: 0}, {width: 200})
         this.typed2 = new Typed(this.el2, options2);
         this.typed2.start();
     }
@@ -44,15 +47,16 @@ class Header extends React.Component {
     render() {
         return ( 
             <section id="header">
-                <header className="type-wrap">
-                    <h1>
-                        <span ref={(el) => this.el = el}></span>
-                    </h1>
-                    <div className="header-hr"><hr></hr></div>
-                    <p>
-                        <span ref={(el2) => this.el2 = el2}></span>
-                    </p>
-                </header>
+                <img className="main-pic" src={logo} alt='profile-pic'/>
+                <h1>
+                    <span ref={(el) => this.el = el}></span>
+                </h1>
+                <div className="header-hr">
+                    <hr ref={(el) => this.hr = el}></hr>
+                </div>
+                <p>
+                    <span ref={(el2) => this.el2 = el2}></span>
+                </p>
             </section>
          );
     }
