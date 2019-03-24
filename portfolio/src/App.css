@@ -39,9 +39,18 @@ html {
   margin-bottom: 30px;
 }
 
+.begin-btn {
+  margin-top: 50px;
+  font-size: 2.5rem;
+  padding: 10px 30px;
+  text-transform: uppercase;
+  background: rgb(30, 30, 30);
+  color: white;
+}
+
 .center-scroll {
-  background: white;
-  width: 50%;
+  background: rgb(30, 30, 30);
+  width: 60%;
   margin: 0 auto;
 }
 

@@ -1,0 +1,25 @@
+#bio {
+    margin-top: 200px;
+}
+
+.content {
+    color: white;
+    padding-top: 30px;
+    margin-top: 50px;
+}
+
+.major {
+    text-transform: uppercase;
+    font-size: 2.5rem;
+    font-weight: bolder;
+    color: rgb(159, 118, 194);
+}
+
+.content p {
+    padding-top: 30px;
+    font-size: 1.8rem;
+    line-height: 1.7;
+    width: 80%;
+    margin: 0 auto;
+}
+

@@ -2,7 +2,6 @@ import React, { Component } from 'react';
 import './App.css';
 import Header from './components/Header.js';
 import Bio from './components/Bio.js';
-import Projects from './components/Projects.js';
 import Contact from './components/Contact.js';
 
 class App extends Component {
@@ -12,7 +11,6 @@ class App extends Component {
         <Header />
         <div className="center-scroll">
           <Bio />
-          <Projects />
           <Contact />
         </div>
       </div>

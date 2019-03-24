@@ -3,6 +3,8 @@ import Typed from 'typed.js';
 import logo from '../images/profile_pic.jpeg'
 import { TweenMax } from 'gsap';
 
+
+
 class Header extends React.Component {
     componentDidMount() {
         const strings = [
@@ -30,7 +32,7 @@ class Header extends React.Component {
         const options2 = {
             strings: strings2,
             typeSpeed: 50,
-            backSpeed: 30,
+            backSpeed: 50,
             onComplete: () => {
                 const cursor2 = document.querySelector('.typed-cursor');
                 setTimeout(() => cursor2.remove(), 3000)
@@ -42,6 +44,20 @@ class Header extends React.Component {
         TweenMax.fromTo(this.hr, 3, {width: 0}, {width: 200})
         this.typed2 = new Typed(this.el2, options2);
         this.typed2.start();
+    }
+
+    scrollToBio = () => {
+        const bio = document.querySelector('#bio')
+        bio.scrollIntoView({
+            block: 'start',
+            inline: 'nearest',
+            behavior: 'smooth'
+        });
+        // window.scroll({
+        //     top: 1000,
+        //     behavior: 'smooth',
+        // });
+
     }
 
     render() {
@@ -57,6 +73,7 @@ class Header extends React.Component {
                 <p>
                     <span ref={(el2) => this.el2 = el2}></span>
                 </p>
+                <button className="begin-btn" onClick={this.scrollToBio}>Begin</button>
             </section>
          );
     }
