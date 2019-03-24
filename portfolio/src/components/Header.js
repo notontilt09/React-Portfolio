@@ -53,11 +53,6 @@ class Header extends React.Component {
             inline: 'nearest',
             behavior: 'smooth'
         });
-        // window.scroll({
-        //     top: 1000,
-        //     behavior: 'smooth',
-        // });
-
     }
 
     render() {
