@@ -48,6 +48,11 @@ html {
   color: white;
 }
 
+.begin-btn:hover {
+  background: black;
+  cursor: pointer;
+}
+
 .center-scroll {
   background: rgb(30, 30, 30);
   width: 60%;

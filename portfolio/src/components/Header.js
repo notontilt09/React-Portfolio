@@ -68,7 +68,7 @@ class Header extends React.Component {
                 <p>
                     <span ref={(el2) => this.el2 = el2}></span>
                 </p>
-                <button className="begin-btn" onClick={this.scrollToBio}>Begin</button>
+                <button className="begin-btn" onClick={this.scrollToBio}>Find Out More...</button>
             </section>
          );
     }
