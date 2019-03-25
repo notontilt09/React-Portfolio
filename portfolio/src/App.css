@@ -46,6 +46,8 @@ html {
   text-transform: uppercase;
   background: rgb(30, 30, 30);
   color: white;
+  transition: all 1s;
+  border-radius: 10px;
 }
 
 .begin-btn:hover {
