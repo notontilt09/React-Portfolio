@@ -67,6 +67,12 @@
     width: 40%;
 }
 
+@media (max-width: 500px) {
+    .icons-grid li {
+        width: 90%;
+    }
+}
+
 .icons-grid li a {
     text-decoration: none;
 }

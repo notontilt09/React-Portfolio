@@ -17,12 +17,25 @@ html {
   /* text-transform: uppercase; */
 }
 
+@media (max-width: 500px) {
+  #header h1 {
+    font-size: 3.2rem;
+  }
+  
+}
+
 #header p {
   font-size: 2.5rem;
   font-weight: bolder;
   font-style: italic;
   /* text-transform: uppercase; */
   color: rgb(87, 153, 206);
+}
+
+@media (max-width: 500px) {
+  #header p {
+    font-size: 2rem;
+  }
 }
 
 .header-hr hr {
@@ -59,6 +72,12 @@ html {
   background: rgb(30, 30, 30);
   width: 60%;
   margin: 0 auto;
+}
+
+@media (max-width: 500px) {
+  .center-scroll {
+    width: 90%;
+  }
 }
 
 
