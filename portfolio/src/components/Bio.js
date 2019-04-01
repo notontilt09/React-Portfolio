@@ -21,9 +21,28 @@ class Bio extends React.Component {
         });
     }
 
+    scrollToContact = () => {
+        const contact = document.querySelector('#footer');
+        contact.scrollIntoView({
+            block: 'start',
+            inline: 'start',
+            behavior: 'smooth'
+        })
+    }
+
+    scrollToTop = () => {
+        const top = document.querySelector('#header');
+        top.scrollIntoView({
+            block: 'start',
+            inline: 'start',
+            behavior: 'smooth'
+        })
+    }
+
     render() {
         return ( 
             <section id="bio">
+                <button className='scroller scroll-to-bio' onClick={this.scrollToTop}>&uarr;</button>
                 <div className="who-i-am">
                     <div className="content">
                         <header className="major">
@@ -43,23 +62,32 @@ class Bio extends React.Component {
                         <p>Past projects built using a combination of HTML/CSS for basic design, React/Redux to create interactive UI's, and Node.js/Express for the backend.</p>
                         <ul className="icons-grid">
                             <li>
-                                <span className="icon major fas fa-calculator"></span>
-                                <a href="https://dan-calculator.netlify.com/" target='_blank' rel="noopener noreferrer"><h3>React Calculator</h3></a>
+                                <a href="https://dan-calculator.netlify.com/" target='_blank' rel="noopener noreferrer">
+                                    <span className="icon fas fa-calculator"></span>
+                                    <h3 className="proj-desc">React Calculator</h3>
+                                </a>
                             </li>
                             <li>
-                                <span className="icon major fab fa-instagram"></span>
-                                <a href="https://dan-instagram.netlify.com/" target="_blank" rel="noopener noreferrer"><h3>React IG Clone</h3></a>
+                                <a href="https://dan-instagram.netlify.com/" target="_blank" rel="noopener noreferrer">
+                                    <span className="icon fab fa-instagram"></span>
+                                    <h3 className="proj-desc">React Insta Clone</h3>
+                                </a>
                             </li>
                             <li>
-                                <span className="icon major fas fa-plane"></span>
-                                <a href="https://guidr-react-dan.netlify.com/login" target="_blank" rel="noopener noreferrer"><h3>Redux Guidr App</h3></a>
+                                <a href="https://guidr-react-dan.netlify.com/login" target="_blank" rel="noopener noreferrer">
+                                    <span className="icon fas fa-plane"></span>
+                                    <h3 className="proj-desc">Redux Guidr App</h3>
+                                </a>
                             </li>
                             <li>
-                                <i className="icon major fas fa-code"></i>
-                                <a href="https://react-node-express-lotr.netlify.com/" target="_blank" rel="noopener noreferrer"><h3>Node Web API</h3></a>
+                                <a href="https://react-node-express-lotr.netlify.com/" target="_blank" rel="noopener noreferrer">
+                                    <i className="icon fas fa-code"></i>
+                                    <h3 className="proj-desc">Node Web API</h3>
+                                </a>
                             </li>
                         </ul>
                     </div>
+                    <button className='scroller scroll-to-contact' onClick={this.scrollToContact}>&darr;</button>
                 </div>
             </section>
          );

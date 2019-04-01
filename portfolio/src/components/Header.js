@@ -9,7 +9,7 @@ class Header extends React.Component {
     componentDidMount() {
         const strings = [
             'Daneil',
-            'Daniel ^500 Weinman'
+            'Daniel ^200 Weinman'
         ];
 
         const strings2 = [

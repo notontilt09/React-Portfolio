@@ -1,0 +1,58 @@
+.scroll-up-to-stuff {
+    margin-top: 500px;
+}
+
+#footer {
+    margin-bottom: 500px;
+}
+
+.contact-me {
+    margin-top: 30px;
+}
+
+form {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+input {
+    font-size: 2rem;
+    width: 45%;
+    border: none;
+    padding: 5px;
+    margin: 30px 5px 20px 5px;
+}
+
+textarea {
+    width: 95%;
+    font-size: 2rem;
+    height: 80px;
+    margin-bottom: 20px;
+}
+
+.msg-btn {
+    color: rgb(30, 30, 30);
+    background: white;
+    font-size: 3rem;
+    padding: 10px 20px;
+    border-radius: 50px;
+}
+
+.msg-btn:hover {
+    color: white;
+    background: rgb(30, 30, 30);
+}
+
+.flash {
+    width: 100%;
+    margin: 20px auto;
+    background: green;
+    font-size: 3rem;
+}
+
+.bottom-scroller {
+    margin-top: 100px;
+    width: auto;
+    padding: 5px 20px;
+}

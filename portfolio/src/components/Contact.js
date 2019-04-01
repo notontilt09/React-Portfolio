@@ -1,6 +1,8 @@
 import React, { Component } from 'react'
 import axios from 'axios';
 
+import './Contact.css';
+
 export default class Contact extends Component {
     state = {
         name: '',
@@ -26,7 +28,10 @@ export default class Contact extends Component {
         axios.post('https://weinman-portfolio-server.herokuapp.com/send', message)
             .then(res => {
                 this.setState({
-                    flash: res.data.message
+                    flash: res.data.message,
+                    name: '',
+                    email: '',
+                    message: ''
                 })
             })
             .catch(err => {
@@ -34,10 +39,38 @@ export default class Contact extends Component {
             })
     };
 
+    scrollToBio = () => {
+        const bio = document.querySelector('#bio')
+        bio.scrollIntoView({
+            block: 'start',
+            inline: 'nearest',
+            behavior: 'smooth'
+        });
+    }
+
+    scrollToStuff = () => {
+        const stuff = document.querySelector('.stuff-i-do');
+        stuff.scrollIntoView({
+            block: 'start',
+            inline: 'start',
+            behavior: 'smooth'
+        })
+    }
+
+    scrollToTop = () => {
+        const top = document.querySelector('#header');
+        top.scrollIntoView({
+            block: 'start',
+            inline: 'start',
+            behavior: 'smooth'
+        })
+    }
+
     render() {
         return (
-            <div>
-                <section id="footer">
+            <div id="footer">
+                <button className='scroller scroll-up-to-stuff' onClick={this.scrollToStuff}>&uarr;</button>
+                <section className="contact-me">
                     <div className="container">
                         <header className="major">
                             <h2>Get in touch</h2>
@@ -69,12 +102,16 @@ export default class Contact extends Component {
                                 placeholder="Message"
                                 required
                             />
-                            <button type='submit'>Send Message</button>
+                            <button className='msg-btn' type='submit'>Send Message</button>
                         </form>
                         {this.state.flash &&
-                            <div className="flash">
-                                {this.state.flash}
-                            </div>
+                            <>
+                                <div className="flash">
+                                    {this.state.flash}
+                                </div>
+                                <button className='scroller bottom-scroller' onClick={this.scrollToTop}>&uarr;&uarr;&uarr;</button>
+
+                            </>
                         }
                     </div>
                 </section>

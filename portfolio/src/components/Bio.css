@@ -6,7 +6,7 @@
 .content {
     color: white;
     padding-top: 30px;
-    margin-top: 50px;
+    margin-top: 30px;
 }
 
 .major {
@@ -17,14 +17,13 @@
 }
 
 .content p {
-    padding-top: 30px;
+    padding-top: 15px;
     font-size: 1.8rem;
     line-height: 1.7;
     margin: 0 auto;
 }
 
 .stuff-i-do {
-    margin-bottom: 500px;
     padding-top: 20px;
 }
 
@@ -53,5 +52,39 @@
 
 .scroll-to-bio {
     margin-bottom: -30px;
+}
+
+.icons-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+    margin: 20px auto;
+}
+
+.icons-grid li {
+    padding: 30px 20px;
+    width: 40%;
+}
+
+.icons-grid li a {
+    text-decoration: none;
+}
+
+.proj-desc {
+    color: white;
+    font-size: 2rem;
+    padding-top: 20px;
+    text-decoration: none;
+}
+
+.icon {
+    color: rgb(87, 153, 206);
+    font-size: 8rem;
+    transition: color 0.5s;
+}
+
+.icon:hover {
+    color: rgb(192, 193, 154);
 }
 
