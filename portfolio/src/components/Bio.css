@@ -21,6 +21,8 @@
     font-size: 1.8rem;
     line-height: 1.7;
     margin: 0 auto;
+    color: white;
+    text-align: left;
 }
 
 .stuff-i-do {
@@ -67,9 +69,9 @@
     width: 40%;
 }
 
-@media (max-width: 500px) {
+@media (max-width: 700px) {
     .icons-grid li {
-        width: 90%;
+        width: 100%;
     }
 }
 
@@ -81,7 +83,7 @@
     color: white;
     font-size: 2rem;
     padding-top: 20px;
-    text-decoration: none;
+    text-decoration: underline;
 }
 
 .icon {
@@ -93,4 +95,5 @@
 .icon:hover {
     color: rgb(192, 193, 154);
 }
+
 

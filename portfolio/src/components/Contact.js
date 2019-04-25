@@ -2,6 +2,8 @@ import React, { Component } from 'react'
 import axios from 'axios';
 
 import './Contact.css';
+import github from '../images/github.png'
+import linkedin from '../images/linkedin.png'
 
 export default class Contact extends Component {
     state = {
@@ -113,6 +115,15 @@ export default class Contact extends Component {
 
                             </>
                         }
+                    <div className="links">
+                        <h3>dan@weinman.dev</h3>
+                        <a href="http://github.com/notontilt09" target="_blank" rel="noopener noreferrer">
+                            <img src={github} alt="github-link" />
+                        </a>
+                        <a href="http://linkedin.com/in/daniel-weinman" target="_blank" rel="noopener noreferrer">
+                            <img src={linkedin} alt="linkedin-link" />
+                        </a>
+                    </div>
                     </div>
                 </section>
             </div>
