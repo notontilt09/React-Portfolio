@@ -24,7 +24,8 @@ export default class Contact extends Component {
     handleSubmit = e => {
         e.preventDefault();
         this.setState({
-            isSending: true
+            isSending: true,
+            flash: ''
         })
         const message = {
             name: this.state.name,
