@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import axios from 'axios';
+import Loader from 'react-loader-spinner'
 
 import './Contact.css';
 import github from '../images/github.png'
@@ -10,7 +11,8 @@ export default class Contact extends Component {
         name: '',
         email: '',
         message: '',
-        flash: ''
+        flash: '',
+        isSending: false
     }
 
     handleChanges = e => {
@@ -21,6 +23,9 @@ export default class Contact extends Component {
 
     handleSubmit = e => {
         e.preventDefault();
+        this.setState({
+            isSending: true
+        })
         const message = {
             name: this.state.name,
             email: this.state.email,
@@ -33,7 +38,8 @@ export default class Contact extends Component {
                     flash: res.data.message,
                     name: '',
                     email: '',
-                    message: ''
+                    message: '',
+                    isSending: false
                 })
             })
             .catch(err => {
@@ -106,6 +112,16 @@ export default class Contact extends Component {
                             />
                             <button className='msg-btn' type='submit'>Send Message</button>
                         </form>
+                        {this.state.isSending &&
+                            <div className="sending">
+                                <Loader 
+                                    type="TailSpin"
+                                    color="#00BFFF"
+                                    height="50"	
+                                    width="50"
+                                />
+                            </div>
+                        }
                         {this.state.flash &&
                             <>
                                 <div className="flash">
