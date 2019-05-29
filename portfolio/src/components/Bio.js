@@ -64,7 +64,26 @@ class Bio extends React.Component {
                         <header className="major">
                             <h2>Stuff I do</h2>
                         </header>
-                        <p>Past projects built using a combination of HTML/CSS for basic design, React/Redux to create interactive UI's, and Node.js/Express for the backend.</p>
+                        <p>Past projects built using a combination of the following technologies.  Always willing to jump into a new stack and add to the list.</p>
+                        <ul className="skills">
+                            <li>
+                                <p>UI: &nbsp; <span className="skill skill-ui"> CSS | HTML </span></p>
+                            </li>
+                            <li>
+                                <p>Front End: &nbsp; <span className="skill skill-fe"> React | Javascript | Redux | Apollo</span></p>
+                            </li>
+                            <li>
+                                <p>Back End: &nbsp;  <span className="skill skill-be"> Node.js | Express | Python | Flask | GraphQL </span></p>  
+                            </li>
+                            <li>
+                                <p>DB: &nbsp;  <span className="skill skill-db"> MySQL | SQLite | Postgres | Prisma | Knex </span></p>
+                            </li>
+                        </ul>
+
+                        <header className="major">
+                            <h2 className="projects">Projects</h2>
+                        </header>
+
                         <ul className="icons-grid">
                             <li>
                                 <a href="https://manaje-refactor.netlify.com" className="project" target="_blank" rel="noopener noreferrer">

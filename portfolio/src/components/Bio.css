@@ -23,6 +23,7 @@
     margin: 0 auto;
     color: white;
     text-align: left;
+    font-weight: bold;
 }
 
 .stuff-i-do {
@@ -61,14 +62,16 @@
     flex-wrap: wrap;
     justify-content: center;
     width: 100%;
-    margin: 100px auto;
+    margin: 100px auto -20px auto;
 }
 
 .proj-desc {
     color: white;
-    font-size: 2rem;
+    font-size: 3rem;
     padding-top: 20px;
     text-decoration: underline;
+    color: rgb(87, 153, 206);
+    font-style: italic;
 }
 
 .screenshot-left {
@@ -118,6 +121,39 @@
     .project img {
         margin-bottom: 20px;
     }
+}
+
+.skills {
+    margin: 50px auto;
+}
+
+.skills li p {
+    text-align: center;
+}
+
+.skills p {
+    font-weight: bold;
+}
+
+.skill-ui {
+    color:rgb(87, 153, 206);
+}
+
+.skill-fe {
+    color: rgb(240, 140, 91);
+}
+
+.skill-be {
+    color: rgb(192, 193, 154);
+}
+
+.skill-db {
+    color: rgb(69, 194, 167);
+}
+
+.projects {
+    margin: 120px auto -50px auto;
+    font-size: 3rem;
 }
 
 

@@ -70,8 +70,9 @@ html {
 
 .center-scroll {
   background: rgb(30, 30, 30);
-  width: 60%;
+  width: 80%;
   margin: 0 auto;
+  max-width: 1200px;
 }
 
 @media (max-width: 800px) {
