@@ -61,22 +61,7 @@
     flex-wrap: wrap;
     justify-content: center;
     width: 100%;
-    margin: 20px auto;
-}
-
-.icons-grid li {
-    padding: 30px 20px;
-    width: 40%;
-}
-
-@media (max-width: 700px) {
-    .icons-grid li {
-        width: 100%;
-    }
-}
-
-.icons-grid li a {
-    text-decoration: none;
+    margin: 100px auto;
 }
 
 .proj-desc {
@@ -86,14 +71,53 @@
     text-decoration: underline;
 }
 
-.icon {
-    color: rgb(87, 153, 206);
-    font-size: 8rem;
-    transition: color 0.5s;
+.screenshot-left {
+    height: 300px;
+    width: 50%;
+    margin: 0px 50px 0px -50px;
 }
 
-.icon:hover {
-    color: rgb(192, 193, 154);
+.screenshot-right {
+    height: 250px;
+    width: 50%;
+    margin: 0px -50px 0px 50px;
+}
+.project {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    margin: 50px 0 100px 0;
+    text-decoration: none;
+}
+
+.description-left {
+    width: 50%;
+    margin: 0px 50px 0px -50px;
+}
+
+.description-right {
+    width: 50%;
+    margin: 0px -50px 0px 50px;
+}
+
+@media (max-width: 1000px) {
+    .screenshot {
+        width: 100%;
+        margin: 0;
+    }
+
+    .description {
+        width: 100%;
+        margin: 0;
+    }
+
+    .flip {
+        flex-direction: column-reverse;
+    }
+
+    .project img {
+        margin-bottom: 20px;
+    }
 }
 
 
