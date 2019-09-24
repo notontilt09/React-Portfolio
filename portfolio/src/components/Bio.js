@@ -5,7 +5,7 @@ import './Bio.css';
 import noise_controller from '../assets/noise-controller.png';
 import manaje from '../assets/manaje.png';
 import guidr from '../assets/guidr.png';
-import insta from '../assets/insta.png';
+// import insta from '../assets/insta.png';
 import village from '../assets/village.png';
 
 class Bio extends React.Component {
