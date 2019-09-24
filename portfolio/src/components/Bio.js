@@ -6,6 +6,7 @@ import noise_controller from '../assets/noise-controller.png';
 import manaje from '../assets/manaje.png';
 import guidr from '../assets/guidr.png';
 import insta from '../assets/insta.png';
+import village from '../assets/village.png';
 
 class Bio extends React.Component {
     scrollToStuff = () => {
@@ -113,12 +114,12 @@ class Bio extends React.Component {
                                 </a>
                             </li>
                             <li>
-                                <a href="https://dan-instagram.netlify.com/" className="project flip" target="_blank" rel="noopener noreferrer">
+                                <a href="https://thevillagenosh.com" className="project flip" target="_blank" rel="noopener noreferrer">
                                     <div className="description description-left">
-                                        <h3 className="proj-desc">Insta</h3>
-                                        <p>A project built to mimic an Instragram feed, complete with login, comments, and like/unlike functionality built with React.js</p>
+                                        <h3 className="proj-desc">The Village Nosh</h3>
+                                        <p>A single page application for a local bakery built in React.  Later updates include adding a backend for user acquisition and an e-commerce platform.</p>
                                     </div>
-                                    <img src={insta} alt="insta" className="screenshot screenshot-right"></img>
+                                    <img src={village} alt="The Village Nosh" className="screenshot screenshot-right"></img>
                                 </a>
                             </li>
                         </ul>
