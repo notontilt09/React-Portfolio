@@ -4,8 +4,9 @@ import './Bio.css';
 
 import noise_controller from '../assets/noise-controller.png';
 import manaje from '../assets/manaje.png';
-import guidr from '../assets/guidr.png';
+// import guidr from '../assets/guidr.png';
 // import insta from '../assets/insta.png';
+import lowkey from '../assets/lowkey.png';
 import village from '../assets/village.png';
 
 class Bio extends React.Component {
@@ -87,13 +88,14 @@ class Bio extends React.Component {
 
                         <ul className="icons-grid">
                             <li>
-                                <a href="https://manaje-refactor.netlify.com" className="project" target="_blank" rel="noopener noreferrer">
-                                    <img src={manaje} alt="manaje" className="screenshot screenshot-left"></img>
+                                <a href="http://lowkey.gg" className="project" target="_blank" rel="noopener noreferrer">
+                                    <img src={lowkey} alt="lowkey" className="screenshot screenshot-left"></img>
                                     <div className="description description-right">
-                                        <h3 className="proj-desc">Manaje</h3>
-                                        <p>Refactored an existing codebase of a team management application using GraphQL to build the API, Prisma to interact with a postgres DB, and Apollo Client on the front end to interact with the GraphQL layer.  Added additional functionality to the app in the form of to do lists.</p>
+                                        <h3 className="proj-desc">Lowkey.gg</h3>
+                                        <p>An e-sports startup bringing together recreational gamers competiting against one another for prizes.  Added functionality to the GraphQL API, updated UI/UX to make site navigation more seamless, and wrote backend scripts to automate league management.</p>
                                     </div>
                                 </a>
+                                
                             </li>
                             <li>
                                 <a href="https://thenoisecontroller.netlify.com/" className="project flip" target='_blank' rel="noopener noreferrer">
@@ -105,13 +107,13 @@ class Bio extends React.Component {
                                 </a>
                             </li>
                             <li>
-                                <a href="https://guidr-react-dan.netlify.com/login" className="project" target="_blank" rel="noopener noreferrer">
-                                    <img src={guidr} alt="guidr" className="screenshot screenshot-left"></img>
+                                <a href="https://manaje-refactor.netlify.com" className="project" target="_blank" rel="noopener noreferrer">
+                                    <img src={manaje} alt="manaje" className="screenshot screenshot-left"></img>
                                     <div className="description description-right">
-                                        <h3 className="proj-desc">Guidr</h3>
-                                        <p>An application for outdoor guides to arrange meetups with adventure seekers.  Front-end built with React.js and Redux and backend RESTful API built with Node.js and Express</p>
+                                        <h3 className="proj-desc">Manaje</h3>
+                                        <p>Refactored an existing codebase of a team management application using GraphQL to build the API, Prisma to interact with a postgres DB, and Apollo Client on the front end to interact with the GraphQL layer.  Added additional functionality to the app in the form of to do lists.</p>
                                     </div>
-                                </a>
+                                </a>  
                             </li>
                             <li>
                                 <a href="https://thevillagenosh.com" className="project flip" target="_blank" rel="noopener noreferrer">
